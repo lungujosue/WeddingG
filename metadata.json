@@ -1,0 +1,6 @@
+{
+  "name": "Mariage Élodie & Gabriel",
+  "description": "Faire-part digital d'exception, invitation personnalisée avec QR code et gestion d'invités pour le mariage d'Élodie et Gabriel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

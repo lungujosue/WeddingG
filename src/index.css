@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-script: "Alex Brush", cursive;
+  
+  --color-gallery-bg: #fdfbf7;
+  --color-gallery-card: #ffffff;
+  --color-gallery-surface: #f7f3eb;
+  --color-gallery-dark: #1a1a1a;
+  --color-gallery-muted: #666666;
+  --color-artistic-ochre: #d4a373;
+  --color-artistic-ochre-light: #e6c5a5;
+  --color-artistic-ochre-dark: #b88656;
+}
+
+/* Subtle Artistic Flair gallery texture */
+.paper-texture {
+  background-color: #fdfbf7;
+  background-image: radial-gradient(rgba(212, 163, 115, 0.25) 0.75px, transparent 0.75px), radial-gradient(rgba(212, 163, 115, 0.25) 0.75px, #fdfbf7 0.75px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+.artistic-border {
+  border: 1px solid rgba(26, 26, 26, 0.12);
+}
+
+.invitation-border {
+  border: 1px solid rgba(212, 163, 115, 0.45);
+  box-shadow: 
+    inset 0 0 0 4px #fdfbf7, 
+    inset 0 0 0 5px rgba(212, 163, 115, 0.35);
+}
+
+.invitation-gold-frame {
+  position: relative;
+  background: #fdfbf7;
+  border: 1px solid rgba(212, 163, 115, 0.6);
+}
+
+.invitation-gold-frame::after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(212, 163, 115, 0.3);
+  pointer-events: none;
+}
+
+/* Print optimizations */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
+
